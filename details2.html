@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details – Nike White Sneakers</title>
+</head>
+
+<body>
+
+    <h2>Product Specifications</h2>
+    <table border="1" cellpadding="6" cellspacing="0">
+        <caption>Nike White Sneakers – Technical Specifications</caption>
+        <thead>
+            <tr>
+                <th scope="col">Specification</th>
+                <th scope="col">Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Upper material</th>
+                <td>Premium full‑grain leather with mesh panels</td>
+            </tr>
+            <tr>
+                <th scope="row">Closure</th>
+                <td>Lace‑up</td>
+            </tr>
+            <tr>
+                <th scope="row">Weight</th>
+                <td>340 g (size 9, per shoe)</td>
+            </tr>
+            <tr>
+                <th scope="row">Breathability</th>
+                <td>Perforated toe box and side panels</td>
+            </tr>
+            <tr>
+                <th scope="row">Available sizes</th>
+                <td>US 6 – 13 (EU 39–46)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Purchase</h2>
+    <form action="/cart" method="post">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="5">
+        <a href="cart.html"><button type="button">Add to Cart</button></a>
+    </form>
+
+    <section>
+        <h2>Customer Reviews</h2>
+        <blockquote>
+            <p>Highly recommend! Super comfortable right out of the box.</p>
+            <footer>— Jaira K.</footer>
+        </blockquote>
+    </section>
+</body>
+
+</html>
