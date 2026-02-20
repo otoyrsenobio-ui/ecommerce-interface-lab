@@ -3,38 +3,52 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Shop ni Denzel</title>
 
+    <link rel="stylesheet" href="styleko.css">
 </head>
 
 <body>
 
-    <h1>Create an Account</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="prroducts.html">Home</a></li>
+                <li><a href="clothing.html">Clothing</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <form>
-        <label>
-        Full Name
-        <input type="text" required>
-    </label>
+    <main>
+        <h1>Create an Account</h1>
 
-        <label>
-        Email Address
-        <input type="email" required>
-    </label>
+        <form class="signup-form">
+            <label>
+                <span>Full Name</span>
+                <input type="text" required>
+            </label>
 
-        <label>
-        Password
-        <input type="password" required>
-    </label>
+            <label>
+                <span>Email Address</span>
+                <input type="email" required>
+            </label>
 
-        <label>
-        Confirm Password
-        <input type="password" required>
-    </label>
+            <label>
+                <span>Password</span>
+                <input type="password" required minlength="6">
+            </label>
 
-        <button type="submit">Sign Up</button>
-    </form>
+            <label>
+                <span>Confirm Password</span>
+                <input type="password" required minlength="6">
+            </label>
 
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
 </body>
 
 </html>

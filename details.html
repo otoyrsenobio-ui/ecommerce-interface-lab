@@ -4,67 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details – Leather Crossbody Bag | Shop ni Denzel</title>
+    <title>Leather Crossbody Bag – Details | Shop ni Denzel</title>
+    <link rel="stylesheet" href="styleko.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="prroducts.html">Home</a></li>
+                <li><a href="details.html">Clothing</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>Product Specifications</h2>
+    <main>
+        <h2>Leather Crossbody Bag – Specifications</h2>
+        <table>
+            <caption>Product Details</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Specification</th>
+                    <th scope="col">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Material</th>
+                    <td>100% genuine cowhide leather</td>
+                </tr>
+                <tr>
+                    <th scope="row">Dimensions (W x H x D)</th>
+                    <td>8.5" x 6" x 2.5"</td>
+                </tr>
+                <tr>
+                    <th scope="row">Strap length</th>
+                    <td>Adjustable, 22" – 26"</td>
+                </tr>
+                <tr>
+                    <th scope="row">Compartments</th>
+                    <td>1 main compartment, 1 zippered pocket, 2 card slots</td>
+                </tr>
+                <tr>
+                    <th scope="row">Weight</th>
+                    <td>0.7 lbs (320 g)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Color</th>
+                    <td>Classic Brown / Black</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <table border="1" cellpadding="6" cellspacing="0">
-        <caption>Leather Crossbody Bag – Detailed Specifications</caption>
-        <thead>
-            <tr>
-                <th scope="col">Specification</th>
-                <th scope="col">Details</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">Material</th>
-                <td>100% genuine cowhide leather</td>
-            </tr>
-            <tr>
-                <th scope="row">Dimensions (W x H x D)</th>
-                <td>8.5" x 6" x 2.5"</td>
-            </tr>
-            <tr>
-                <th scope="row">Strap length</th>
-                <td>Adjustable, 22" – 26"</td>
-            </tr>
-            <tr>
-                <th scope="row">Compartments</th>
-                <td>1 main compartment, 1 zippered pocket, 2 card slots</td>
-            </tr>
-            <tr>
-                <th scope="row">Weight</th>
-                <td>0.7 lbs (320 g)</td>
-            </tr>
-            <tr>
-                <th scope="row">Color</th>
-                <td>Classic Brown / Black</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Purchase</h2>
-    <form action="/cart" method="post">
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-        <a href="cart.html"><button type="button">Add to Cart</button></a>
-    </form>
-
-    <section>
         <h2>Customer Reviews</h2>
-        <blockquote>
-            <p>Excellent quality! Babalikan ko ito. Sulit na sulit!</p>
-            <footer>— Queen Santa S.</footer>
-        </blockquote>
-        <blockquote>
-            <p>Perfect size for everyday use. Hope next time meron pang stock.</p>
-            <footer>— Jaira R.</footer>
-        </blockquote>
-    </section>
+        <div class="review">
+            <blockquote>
+                <p>Excellent quality! Babalikan ko ito. Sulit na sulit!</p>
+                <footer>— Queen Santa S.</footer>
+            </blockquote>
+            <blockquote>
+                <p>Perfect size for everyday use. Hope next time meron pang stock.</p>
+                <footer>— Jaira R.</footer>
+            </blockquote>
+        </div>
+    </main>
 </body>
 
 </html>

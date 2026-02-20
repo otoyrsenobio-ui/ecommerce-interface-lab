@@ -5,61 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Listing | Shop ni Denzel</title>
+
+    <link rel="stylesheet" href="styleko.css">
 </head>
 
 <body>
 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#.html">Home</a></li>
+                <li><a href="clothing.html">Clothing</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <h1>All Products</h1>
-        <div class="product-grid">
+
+        <section class="product-list">
+
             <article>
-                <img src="OIP.webp">
+                <img src="OIP.webp" alt="Nike White Sneakers">
                 <h2>Nike White Sneakers</h2>
-                <p>₱59</p>
-                <a href="details2.html">View Details</a>
+                <p class="price">59</p>
+                <a href="details2.html" class="button-link">View Details</a>
             </article>
+
             <article>
-                <img src="download.webp">
+                <img src="download.webp" alt="Leather Crossbody Bag">
                 <h2>Leather Crossbody Bag</h2>
-                <p>₱89</p>
-                <a href="details.html">View Details</a>
+                <p class="price">89</p>
+                <a href="details.html" class="button-link">View Details</a>
             </article>
 
+        </section>
 
-        </div>
+        <aside aria-labelledby="filter">
+            <h2 id="filter">Filter Products</h2>
+            <form>
+                <p><strong>Category</strong></p>
+                <label>
+                    <input type="checkbox" name="category" value="clothing">
+                    Clothing
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="shoes">
+                    Shoes
+                </label>
+
+                <p><strong>Price Range</strong></p>
+                <label>
+                    <input type="radio" name="price" value="25to50">
+                    ₱25 – ₱50
+                </label>
+                <label>
+                    <input type="radio" name="price" value="50to100">
+                    ₱50 – ₱100
+                </label>
+                <label>
+                    <input type="radio" name="price" value="higher than 100">
+                    ₱100 – ₱500
+                </label>
+
+                <button type="submit">Apply Filters</button>
+            </form>
+        </aside>
     </main>
-
-    <aside aria-labelledby="filter">
-        <h2>Filter Products</h2>
-        <form>
-            <p><strong>Category</strong></p>
-            <label>
-                <input type="checkbox" name="category" value="clothing">
-                Clothing
-            </label>
-            <label>
-                <input type="checkbox" name="category" value="shoes">
-                Shoes
-            </label>
-
-            <p><strong>Price Range</strong></p>
-
-            <label>
-                <input type="radio" name="price" value="25to50">
-                ₱25 – ₱50
-            </label>
-            <label>
-                <input type="radio" name="price" value="50to100">
-                ₱50 – ₱100
-            </label>
-            <label>
-                <input type="radio" name="price" value="higher than 100">
-                ₱100 – ₱500
-            </label>
-
-            <button type="submit">Apply Filters</button>
-        </form>
-    </aside>
 </body>
 
 </html>

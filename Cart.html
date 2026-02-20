@@ -3,49 +3,62 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Shopping Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Shop ni Denzel</title>
 
+    <link rel="stylesheet" href="styleko.css">
 </head>
 
 <body>
 
-    <h1>Your Cart</h1>
-    <ul>
-        <li>
-            <img src="product1.jpg" alt="Product Image">
-            <div>
-                <h3>Nike white sneaker</h3>
-                <p>₱59.00</p>
-                <label>
-                    Quantity:
-                    <input type="number" value="1" min="1">
-                </label>
-            </div>
-        </li>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="prroducts.html">back</a></li>
+                <li><a href="clothing.html">Clothing</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <li>
-            <img src="product2.jpg" alt="Product Image">
-            <div>
-                <h3>Leather Crossbody Bag</h3>
-                <p>₱89.00</p>
-                <label>
-                    Quantity:
-                    <input type="number" value="1" min="1">
-                </label>
-            </div>
-        </li>
-    </ul>
+    <main>
+        <h1>Your Cart</h1>
 
-    <section class="subtotal">
-        Subtotal: ₱148.00
-    </section>
+        <div class="cart-container">
+            <ul>
+                <li>
+                    <img src="OIP.webp" alt="Nike White Sneakers">
+                    <div>
+                        <h3>Nike White Sneakers</h3>
+                        <p class="price">59.00</p>
+                        <label>
+                            Quantity:
+                            <input type="number" value="1" min="1">
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <img src="download.webp" alt="Leather Crossbody Bag">
+                    <div>
+                        <h3>Leather Crossbody Bag</h3>
+                        <p class="price">89.00</p>
+                        <label>
+                            Quantity:
+                            <input type="number" value="1" min="1">
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-    <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+        <section class="subtotal">
+            Subtotal: <span class="price">148.00</span>
+        </section>
 
-    <section class="empty-cart">
-        <p>Your cart is currently empty.</p>
-    </section>
+        <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
 
+    </main>
 </body>
 
 </html>
