@@ -4,46 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page | shop ni Denzel</title>
+    <title>Landing page | Shop</title>
     <link rel="stylesheet" href="styleko.css">
 </head>
 
 <body>
     <header>
+        <div class="logo">Shop</div>
         <nav>
             <ul>
-                <li><a href="/clothing">Clothing</a></li>
-                <li><a href="/shoes">Shoes</a></li>
-                <li><a href="/Contact Us">Contact Us</a></li>
+                <li><a href="prroducts.html">Products</a></li>
+                <li><a href="clothing.html">Clothing</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+
+        <section class="hero">
             <h1 id="hero-heading">Discover Your Next Favorite</h1>
             <p>Shop the latest trends with free shipping on orders over $50.</p>
             <a href="prroducts.html"><button aria-label="Shop now">Shop Now</button></a>
         </section>
 
-        <section>
-            <h2 id="product">Featured Product</h2>
-
-            <h3>Nike White Sneakers</h3>
-            <p>₱59</p>
-
-            <h3>Leather Crossbody Bag</h3>
-            <p>₱89</p>
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-list featured-grid">
+                <article>
+                    <img src="OIP.webp" alt="Nike White Sneakers">
+                    <h3>Nike White Sneakers</h3>
+                    <p class="price">59</p>
+                </article>
+                <article>
+                    <img src="download.webp" alt="Leather Crossbody Bag">
+                    <h3>Leather Crossbody Bag</h3>
+                    <p class="price">89</p>
+                </article>
+            </div>
         </section>
 
-        <section>
-            <h2 id="discounted">Discounted Deals</h2>
-            <div class="product">
-                <h3>Jordan Shoes</h3>
-                <p><s>₱79.99</s> ₱63.99</p>
-
-                <h3>Ferarri Jacket</h3>
-                <p><s>₱99.99</s> ₱69.99</p>
+        <section class="discounted-deals">
+            <h2>Discounted Deals</h2>
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <h3>Jordan Shoes</h3>
+                    <p class="price"><s>₱79.99</s> <strong>₱63.99</strong></p>
+                </div>
+                <div class="deal-card">
+                    <h3>Ferrari Jacket</h3>
+                    <p class="price"><s>₱99.99</s> <strong>₱69.99</strong></p>
+                </div>
             </div>
         </section>
     </main>

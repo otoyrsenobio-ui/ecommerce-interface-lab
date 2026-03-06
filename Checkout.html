@@ -1,68 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="styleko.css">
 
 <head>
     <meta charset="UTF-8">
-    <title>Checkout & Shipping</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout & Shipping | Shop</title>
+    <link rel="stylesheet" href="styleko.css">
 </head>
 
 <body>
+    <header>
+        <div class="logo">Shop ni Denzel</div>
+        <nav>
+            <ul>
+                <li><a href="prroducts.html">Home</a></li>
+                <li><a href="clothing.html">Clothing</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main>
+    <div class="checkout-wrapper">
+        <main>
+            <section>
+                <h2>Shipping Information</h2>
+                <fieldset>
+                    <legend>Shipping Address</legend>
+                    <label>Full Name <input type="text" placeholder=""></label>
+                    <label>Street Address <input type="text" placeholder=""></label>
+                    <label>Address details <input type="text" placeholder=""></label>
+                </fieldset>
+            </section>
 
-        <section>
-            <h2>Shipping Information</h2>
-            <fieldset>
-                <legend>Shipping Address</legend>
+            <section>
+                <h2>Payment Method</h2>
+                <form>
+                    <label><input type="radio" name="payment" checked> COD</label>
+                    <label><input type="radio" name="payment"> gcash</label>
+                    <a href="Account.html"><button type="button">Place order</button></a>
+                </form>
+            </section>
+        </main>
 
-                <label>
-                Full Name
-                <input type="text" placeholder="">
-            </label>
-
-                <label>
-                Street Address
-                <input type="text" placehold="">
-            </label>
-
-                <label>
-                adress details 
-                <input type="text" placeholder="">
-            </label>
-            </fieldset>
-        </section>
-
-        <section>
-            <h2>Payment Method</h2>
-
-            <form>
-                <label>
-                <input type="radio" name="payment" checked>
-                COD
-            </label>
-
-                <label>
-                <input type="radio" name="payment">
-                gcash
-            </label>
-                <a href="Account.html">
-                    <button type="button">Place order</button>
-                </a>
-            </form>
-        </section>
-
-    </main>
-
-    <aside>
-        <h3>Order Summary</h3>
-        <p>Items Total: ₱148.00</p>
-        <p>Shipping: ₱150.00</p>
-        <hr>
-        <p><strong>Total: ₱338.00</strong></p>
-    </aside>
-
+        <aside>
+            <h3>Order Summary</h3>
+            <p>Items Total: ₱148.00</p>
+            <p>Shipping: ₱150.00</p>
+            <hr>
+            <p><strong>Total: ₱338.00</strong></p>
+        </aside>
+    </div>
 </body>
 
 </html>
