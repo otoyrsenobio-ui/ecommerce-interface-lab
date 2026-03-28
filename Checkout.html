@@ -14,9 +14,10 @@
         <nav>
             <ul>
                 <li><a href="prroducts.html">Home</a></li>
-                <li><a href="clothing.html">Clothing</a></li>
-                <li><a href="shoes.html">Shoes</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#.html">Clothing</a></li>
+                <li><a href="#.html">Shoes</a></li>
+                <li><a href="#.html">Contact Us</a></li>
+                <li><a href="Cart.html">Cart <span class="cart-count">0</span></a></li>
             </ul>
         </nav>
     </header>
@@ -37,20 +38,22 @@
                 <h2>Payment Method</h2>
                 <form>
                     <label><input type="radio" name="payment" checked> COD</label>
-                    <label><input type="radio" name="payment"> gcash</label>
-                    <a href="Account.html"><button type="button">Place order</button></a>
+                    <label><input type="radio" name="payment"> GCash</label>
+                    <button type="button" class="place-order">Place order</button>
                 </form>
             </section>
         </main>
 
         <aside>
             <h3>Order Summary</h3>
-            <p>Items Total: ₱148.00</p>
-            <p>Shipping: ₱150.00</p>
+            <p>Items Total: ₱<span class="items-total">0.00</span></p>
+            <p>Shipping: ₱<span class="shipping">150.00</span></p>
             <hr>
-            <p><strong>Total: ₱338.00</strong></p>
+            <p><strong>Total: ₱<span class="total">0.00</span></strong></p>
         </aside>
     </div>
+
+    <script src="1.js"></script>
 </body>
 
 </html>
